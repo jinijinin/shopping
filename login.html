@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <h1>Shopping</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="Signup.html">Signup</a>
+        </nav>
+      </div>
+    </header>
+    <h2>로그인</h2>
+    <div id="login-container">
+      <form id="login">
+        <table>
+          <tr>
+            <td><label for="login-email">Email: </label></td>
+            <td>
+              <input
+                type="email"
+                id="login-email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="login-password">Password: </label></td>
+            <td>
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <button type="submit">Login</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+</html>

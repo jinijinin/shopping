@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쇼핑몰몰</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <div class="head-container">
+          <h1>Shopping</h1>
+          <nav>
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="login.html">Login</a>
+            <a href="Signup.html">Signup</a>
+            <a href="cart.html">Cart</a>
+            <a href="top.html">Top</a>
+            <a href="pants.html">Pants</a>
+          </nav>
+        </div>
+      </header>
+      <aside></aside>
+      <article>
+        <h2>BEST TOP 10</h2>
+        <ul id="best-list"></ul>
+      </article>
+      <div class="product-container">
+        <div class="item">
+          <img src="img/top.jpg" alt="상품 1" />
+          <p>40,000원</p>
+          <button class="add-cart">Add Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/top.jpg" alt="상품 2" />
+          <p>40,000원</p>
+          <button class="add-cart">Add Cart</button>
+        </div>
+      </div>
+
+      <section id="admin-panel">
+        <h3>상품 선택</h3>
+        <div>
+          <button id="load-top">상의 상품 불러오기</button>
+          <button id="load-pants">하의 상품 불러오기</button>
+        </div>
+        <ul id="product-list">
+          <!-- 상품 목록이 여기에 동적으로 로드됩니다. -->
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p>2025 new shopping store. Thank you.</p>
+      </div>
+    </footer>
+    <script src="js/shop.js"></script>
+  </body>
+</html>

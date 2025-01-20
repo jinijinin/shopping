@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <h1>Shopping</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="Signup.html">Signup</a>
+        </nav>
+      </div>
+    </header>
+    <h2>회원가입</h2>
+    <div id="signup-container">
+      <form id="signup">
+        <table>
+          <tr>
+            <td><label for="signup-email">Email: </label></td>
+            <td>
+              <input
+                type="email"
+                id="signup-email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="signup-password">Password: </label></td>
+            <td>
+              <input
+                type="password"
+                id="signup-password"
+                name="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <button type="submit">Sign up</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>

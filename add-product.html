@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품추가</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <div class="head-container">
+          <h1>Shopping</h1>
+          <nav>
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="login.html">Login</a>
+            <a href="Signup.html">Signup</a>
+            <a href="cart.html">Cart</a>
+            <a href="top.html">Top</a>
+            <a href="pants.html">Pants</a>
+            <a href="add-product.html">Add</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section>
+          <h2>상품 추가</h2>
+          <form id="add-product-form">
+            <label for="product-category">카테고리:</label>
+            <select id="product-category" required>
+              <option value="top">Top</option>
+              <option value="pants">Pants</option>
+            </select>
+            <br />
+            <label for="product-name">상품 이름:</label>
+            <input
+              type="text"
+              id="product-name"
+              placeholder="상품 이름 입력"
+              required
+            />
+            <br />
+            <label for="product-price">상품 가격:</label>
+            <input
+              type="text"
+              id="product-price"
+              placeholder="상품 가격 입력"
+              required
+            />
+            <br />
+            <label for="product-image">이미지 파일:</label>
+            <input type="file" id="product-image" accept="image/*" required />
+            <br />
+            <button type="submit">상품 추가</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer class="footer-container">
+      <p>2025 New Shopping Store. Thank you for visiting!</p>
+    </footer>
+    <script src="js/add-product.js"></script>
+  </body>
+</html>

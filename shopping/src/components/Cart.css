@@ -1,0 +1,54 @@
+h2 {
+  text-align: center;
+  margin: 30px auto;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  background-color: #333;
+  padding: 30px 0;
+}
+
+.HeadContainer {
+  display: flex; /* 가로 정렬 */
+  justify-content: space-between; /* 메뉴 간격을 균등 분배 */
+  align-items: center; /* 세로 중앙 정렬 */
+  max-width: 2400px; /* 헤더 최대 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.header h1 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.header nav a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 텍스트 색상 */
+  font-size: 16px; /* 텍스트 크기 */
+  margin: 0 15px; /* 링크 간격 */
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .headContainer {
+    flex-wrap: wrap; /* 작은 화면에서 메뉴가 줄 바꿈됨 */
+    justify-content: center; /* 메뉴를 중앙 정렬 */
+  }
+  .HeadContainer a {
+    margin: 10px;
+  }
+}
+

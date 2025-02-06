@@ -25,48 +25,35 @@
       <main>
         <section>
           <h2>상의 상품 목록</h2>
-          <div id="top-list" class="top-container">
+          <div id="top-list" class="product-container">
             <!-- 동적으로 상품이 추가됩니다 -->
           </div>
         </section>
-        <section>
-          <h2>상품 추가</h2>
-          <form id="add-top-product-form">
-            <label for="top-product">상품 이름:</label>
-            <input
-              type="text"
-              id="top-product"
-              placeholder="상품 이름 입력"
-              required
-            />
-            <br />
-            <label for="top-price">상품 가격:</label>
-            <input
-              type="text"
-              id="top-price"
-              placeholder="상품 가격 입력"
-              required
-            />
-            <br />
-            <label for="product-image">이미지 파일:</label>
-            <input
-              type="file"
-              id="top-product-image"
-              accept="image/*"
-              required
-            />
-            <br />
-            <button type="submit">상품 추가</button>
-          </form>
-        </section>
-        <section id="product-list">
-          <!-- 상품 목록이 동적으로 표시됩니다 -->
-        </section>
       </main>
     </div>
+
     <footer class="footer-container">
       <p>2025 New Shopping Store. Thank you for visiting!</p>
     </footer>
+    <script>
+      // 로컬 스토리지에서 데이터 가져오기
+      const products = JSON.parse(localStorage.getItem("top")) || [];
+
+      // 컨테이너 가져오기
+      const container = document.getElementById("top-list");
+
+      // 상품 HTML 생성 및 삽입
+      products.forEach((product) => {
+        const productHTML = `
+          <div class="item">
+            <img src="${product.image}" alt="${product.name}" />
+            <p>${product.price}원</p>
+            <button class="add-cart">Add Cart</button>
+          </div>
+        `;
+        container.innerHTML += productHTML;
+      });
+    </script>
     <script src="js/top.js"></script>
   </body>
 </html>
